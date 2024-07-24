@@ -1,5 +1,32 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width:vw;
+  height:100vh;
+}
+
+.GridContainer {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(20, 2fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+
+.Square {
+  display: flex;
+  height: 35px;
+  width: 35px;
+  border :2px solid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.Square:hover {
+  background-color: rgb(0, 255, 21);
 }
 
 .App-logo {
